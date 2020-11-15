@@ -1,0 +1,375 @@
+img {
+    width: 100%;
+}
+
+table img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#main-container #content .actions .btn-action {
+    padding: 10px;
+    height: 40px;
+    line-height: 1.4;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+#main-container #content .actions .btn-action.btn-add {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* form action lable */
+
+.form-group {
+    position: relative;
+}
+
+.form-group label:not(.label-Unaffected) {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
+.form-group label:not(.label-Unaffected).active {
+    font-size: 13px;
+    position: absolute;
+    top: -8px;
+    background: #fff;
+}
+
+.form-group label {
+    transition: all 0.2s;
+}
+
+
+/* form error */
+
+
+/* error */
+
+#main-container .content .form-group,
+.modal .form-group {
+    position: relative;
+}
+
+#main-container .content .form-group .error,
+.modal .error {
+    position: absolute;
+    font-size: 10px;
+    top: 37px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #e04f1a;
+    font-weight: bold;
+    z-index: 100;
+}
+
+
+/* 
+/* thumbnail drop  */
+
+#main-container .content .drop-file {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #0d0d0d17;
+}
+
+#main-container .content .drop-file:hover {
+    padding: 0px;
+    border: 1px seagreen dotted;
+}
+
+#main-container .content .drop-file.active {
+    padding: 0px;
+    border: 1px seagreen dotted;
+}
+
+#main-container .content input[type=file] {
+    display: none;
+}
+
+#main-container .content .btn-upload {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 10;
+}
+
+#main-container .content .box-preview {
+    padding: 5px;
+    display: flex;
+}
+
+.content .box-preview img {
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.content .box-preview img.active {
+    animation-name: upload;
+    animation-duration: 1s;
+}
+
+@keyframes upload {
+    10% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box-upload {
+    box-shadow: 0px 0px 3px #6b65654f;
+    height: 85%;
+    border-radius: 5px;
+}
+
+.box-upload #btn-upload {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* incon seach form */
+
+#main-container .content .form-group .icon-seach {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#main-container .content .form-group:hover .icon-seach {
+    opacity: 1;
+}
+
+
+/* studying   */
+
+#main-container #status-studying {
+    padding: 15px;
+}
+
+#main-container #status-studying #info-user .box-thumbnail {
+    display: inline-block;
+}
+
+#status-studying #info-user .box-thumbnail img {
+    width: 100%;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* login */
+
+#box-login {
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+
+/* dashborad  */
+
+#main-container #dashboard #box-note {
+    min-height: 100%;
+}
+
+#main-container #dashboard #box-note .content-note {
+    list-style: none;
+    padding: 0;
+}
+
+#dashboard #box-note .content-note li {
+    padding: 10px 0px;
+}
+
+#dashboard #box-note .content-note li::after {
+    clear: both;
+}
+
+#box-note .content-note li .box-action {
+    float: right;
+}
+
+#box-note .note-input {
+    position: relative;
+}
+
+#box-note .note-input input {
+    padding: 0px 35px 0px 5px;
+}
+
+#box-note .note-input button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+/* course 7-11-2020 */
+
+#content #course .line,
+.content.course-offline .line {
+    background: #d1d9e8;
+    padding: 0.5px;
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.content.course-offline .line {
+    background: #fff;
+}
+
+#content #course .line .label,
+.content.course-offline .line .label {
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: auto;
+    color: #82b54b;
+    background: #fff;
+    padding: 10px;
+}
+
+#content #course #price-old,
+#content #course #price-old::placeholder {
+    webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+}
+
+
+/* animate scroll id */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* loading import 13-11-2020 */
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d23d3d;
+    margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
